@@ -145,9 +145,39 @@
       </div>
     </div>
   </div>
-  <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
-></script>
+
+  <style>
+    @media (max-width: 768px) {
+      .box {
+        width: 250px;
+        height: 280px;
+      }
+
+      .input-container {
+        max-width: 250px;
+      }
+
+      .input-container input {
+        width: 80%;
+      }
+
+      .input-container button {
+        flex-basis: 20%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      body {
+        /* Add styles for computer screens here */
+        background-image: url("https://i.ibb.co/ZgRMy4D/gojo-domain.jpg");
+        /* Add styles for computer screens here */
+      }
+    }
+
+
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
   <script>
     let a = document.getElementById("pair");
     let b = document.getElementById("submit");
