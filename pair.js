@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
+const port = process.env.PORT || 4000;
 const {
     default: makeWASocket,
     useMultiFileAuthState,
